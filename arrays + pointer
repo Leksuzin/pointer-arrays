@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+    int tab[5] = {1,2,3,4,5};
+    int max = tab[0];
+    for (int* i = tab; i < tab + 5; i++) 
+    {
+        std::cout << *i << std::endl;
+        
+         if (*i> max)
+         {
+             max = *i;
+         }
+         
+    }
+    std::cout << max;
+
+    return 0;
+}
